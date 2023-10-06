@@ -1,0 +1,45 @@
+[
+     {
+       "id": 1,
+       "doctorName": "Dr. John Smith",
+       "image": "https://i.ibb.co/xh1rZc6/doctor1.png",
+       "doctorQualification": "MD, Cardiologist",
+       "consultingHour": "Monday - Friday: 9:00 AM - 5:00 PM"
+     },
+     {
+       "id": 2,
+       "doctorName": "Dr. Emily Johnson",
+       "image": "https://i.ibb.co/ZTpzKqP/doctor2.png",
+       "doctorQualification": "DDS, Dentist",
+       "consultingHour": "Monday - Thursday: 10:00 AM - 6:00 PM"
+     },
+     {
+       "id": 3,
+       "doctorName": "Dr. Susan Davis",
+       "image": "https://i.ibb.co/tZhDmpj/doctor3.png",
+       "doctorQualification": "MD, Pediatrician",
+       "consultingHour": "Tuesday - Friday: 8:00 AM - 4:00 PM"
+     },
+     {
+       "id": 4,
+       "doctorName": "Dr. Michael Wilson",
+       "image": "https://i.ibb.co/7kMSk50/doctor4.png",
+       "doctorQualification": "Ph.D., Psychologist",
+       "consultingHour": "Monday - Wednesday: 11:00 AM - 7:00 PM"
+     },
+     {
+       "id": 5,
+       "doctorName": "Dr. Sarah Adams",
+       "image": "https://i.ibb.co/zGxmCMZ/doctor5.png",
+       "doctorQualification": "DO, Orthopedic Surgeon",
+       "consultingHour": "Wednesday - Saturday: 9:30 AM - 6:30 PM"
+     },
+     {
+       "id": 6,
+       "doctorName": "Dr. Robert Turner",
+       "image": "https://i.ibb.co/p0dQ88L/doctor6.png",
+       "doctorQualification": "MD, Dermatologist",
+       "consultingHour": "Thursday - Sunday: 10:30 AM - 8:30 PM"
+     }
+   ]
+   

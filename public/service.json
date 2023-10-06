@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "serviceName": "Wellness Workshops",
+    "image": "https://i.ibb.co/VNg7mtk/welness.png",
+    "description": "Wellness Workshops offer insightful sessions on holistic health and self-care practices. Explore topics like nutrition, mindfulness, and fitness to nurture a balanced lifestyle. Join us for expert guidance and transformative experiences to enhance your overall well-being."
+  },
+  {
+    "id": 2,
+    "serviceName": "Health Screenings",
+    "image": "https://i.ibb.co/jW9h901/health-screening.png",
+    "description": "Health Screenings provide early detection of potential health issues. Our comprehensive screenings cover various aspects, including blood pressure, cholesterol levels, and more. Regular screenings empower you to take proactive steps towards maintaining good health and preventing future complications."
+  },
+  {
+    "id": 3,
+    "serviceName": "Holistic Healing",
+    "image": "https://i.ibb.co/VTnDJkS/holistic.png",
+    "description": "Holistic Healing emphasizes treating the whole person—mind, body, and spirit. Our Holistic Healing services offer natural therapies and techniques to promote overall well-being. Experience personalized care that addresses physical, emotional, and spiritual aspects, fostering balance and harmony in your life."
+  },
+  {
+    "id": 4,
+    "serviceName": "Career in Health",
+    "image": "https://i.ibb.co/GQDyK9H/pharma.jpg",
+    "description": "Embark on a fulfilling journey with a Career in Health. Explore diverse opportunities in healthcare, from nursing to medical research. Shape the future of medicine and make a positive impact on people's lives while enjoying a rewarding and ever-evolving profession."
+  },
+  {
+    "id": 5,
+    "serviceName": "Nutrition Guidance",
+    "image": "https://i.ibb.co/V99XVMQ/gynae.png",
+    "description": "Receive expert Nutrition Guidance to optimize your well-being. Our professionals create personalized dietary plans, helping you make healthier choices. Achieve your health goals, whether it's weight management, improved energy levels, or dietary adjustments for specific conditions. Start your journey towards a healthier lifestyle with our guidance."
+  },
+  {
+    "id": 6,
+    "serviceName": "Mental Health Support",
+    "image": "https://i.ibb.co/JpMZ7Q5/mental.png",
+    "description": "Access dedicated Mental Health Support for a healthier mind. Our compassionate professionals offer therapy and counseling services to address various mental health concerns. Receive guidance, coping strategies, and a safe space to discuss your feelings. Prioritize your emotional well-being and embark on a path to mental wellness with us."
+  }
+]

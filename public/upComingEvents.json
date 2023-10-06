@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Healthy Living Seminar",
+    "image": "https://i.ibb.co/SKnKrtj/Healthy-Living.png",
+    "description": "Join us for an informative seminar on healthy living, where experts will discuss nutrition, fitness, and mental well-being."
+  },
+  {
+    "id": 2,
+    "title": "Mindfulness Retreat",
+    "image": "https://i.ibb.co/8mPLZM4/Mindfulness.png",
+    "description": "Experience tranquility at our mindfulness retreat, featuring meditation sessions and stress-relief techniques."
+  },
+  {
+    "id": 3,
+    "title": "Annual Health Expo",
+    "image": "https://i.ibb.co/YbxbCFH/Health-Expo.png",
+    "description": "Discover the latest health innovations at our Annual Health Expo, featuring health screenings and interactive exhibits."
+  },
+  {
+    "id": 4,
+    "title": "Fitness Challenge",
+    "image": "https://i.ibb.co/2h89Qj9/Fitness.png",
+    "description": "Get active and take part in our Fitness Challenge, designed to promote physical fitness and well-being."
+  },
+  {
+    "id": 5,
+    "title": "Healthy Cooking Workshop",
+    "image": "https://i.ibb.co/BtskmnJ/cooking.png",
+    "description": "Join our cooking workshop and learn how to prepare delicious and nutritious meals for a healthier lifestyle."
+  },
+  {
+    "id": 6,
+    "title": "Yoga and Meditation Retreat",
+    "image": "https://i.ibb.co/sqpyZR9/yoga.png",
+    "description": "Embark on a journey of self-discovery and relaxation at our Yoga and Meditation Retreat."
+  }
+]
