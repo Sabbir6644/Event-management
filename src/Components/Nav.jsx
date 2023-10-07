@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { UserContext } from "./AuthContext";
 import { Link, NavLink, Outlet } from "react-router-dom";
-import Footer from "./footer";
+import Footer from "./Footer";
 
 const Nav = () => {
      const { logo, user, logout }= useContext(UserContext)

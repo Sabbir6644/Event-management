@@ -13,14 +13,19 @@ const ServiceDetails = () => {
      const findService = serviceData?.find(service => service.id == id);
 
 
-
-     const { image, serviceName, description, price } = findService
+     console.log(findService);
+     const { image, title, description, eventHighlights, schedule, targetAudience, whyAttend } = findService
      return (
           <div className=" p-2 rounded-md flex flex-col max-w-7xl mx-auto">
                <img className="w-full h-[70vh]" src={image} alt="" />
-               <h2 className="text-3xl font-bold mt-2">{serviceName}</h2>
-               <h2 className="text-xl font-bold my-2">Price: {price}</h2>
-               <p className="flex-grow">{description}</p>
+               <h2 className="text-3xl font-bold my-2">{title}</h2>
+               <p className="text-lg font-semibold"><span className="text-lg font-medium">Schedule:</span> {schedule?.time}</p>
+               <p className="text-lg font-medium my-2"><span className="text-lg font-medium">Location:</span> {schedule?.location}</p>
+               <p className="flex-grow"><span className="text-lg font-medium">Description:</span> {description}</p>
+               <p className="my-2"><span className="text-lg font-medium">Event hilight:</span> {eventHighlights}</p>
+               <h2 className=" my-2"><span className="text-lg font-medium">Targated Audience :</span> {targetAudience}</h2>
+               <p className="my-2"> <span className="text-lg font-medium">Why Attend:</span> {whyAttend}</p>
+
 
           </div>
      );

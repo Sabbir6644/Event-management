@@ -1,23 +1,30 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { UserContext } from "./AuthContext";
 import Service from "./service";
 import UpcomingEvents from "./UpcomingEvents";
 import Partner from "./Partner";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const Home = () => {
-     const { bgImage } = useContext(UserContext)
+     const { bg } = useContext(UserContext)
      const backgroundStyle = {
-          backgroundImage: `url(${bgImage})`,        
+          backgroundImage: `url(${bg})`,        
           backgroundPosition: "cover",
         };
+        useEffect(() => {
+          AOS.init({
+            duration: 3000, 
+            once: true, 
+          });
+        }, []);
         
      return (
           <div className="max-w-7xl mx-auto">
-               <div className="flex items-center pl-10 md:min-h-screen" style={backgroundStyle}>
-               <div>
-               <h2 className="text-orange-300 text-5xl font-bold text-center mb-3">Your Health, Your Future <br />
+               <div className="flex items-center justify-center pl-10 lg:min-h-[70vh]" style={backgroundStyle}>
+               <div data-aos="flip-left" data-aos-delay="100" data-aos-anchor=".example-selector">
+               <h2 className="text-purple-700 text-5xl font-bold text-center mb-3">Your Health, Your Future <br />
                 Ignite Wellness, <br />
                 Transform Your Life</h2>
                 <p className=" text-center text-lg font-medium">Embark on a transformative journey to ignite wellness <br />

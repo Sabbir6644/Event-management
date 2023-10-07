@@ -13,7 +13,6 @@ import ServiceDetails from './Components/ServiceDetails';
 import PrivateRoute from './Components/PrivateRoute';
 import ErrorPage from './Components/ErrorPage';
 import Nav from './Components/Nav';
-import Footer from './Components/footer';
 import About from './Components/About';
 import Contact from './Components/Contact';
 const router = createBrowserRouter([

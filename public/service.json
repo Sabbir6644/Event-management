@@ -1,44 +1,153 @@
 [
   {
     "id": 1,
-    "price": "199$",
-    "serviceName": "Wellness Workshops",
-    "image": "https://i.ibb.co/VNg7mtk/welness.png",
-    "description": "Wellness Workshops offer insightful sessions on holistic health and self-care practices. Explore topics like nutrition, mindfulness, and fitness to nurture a balanced lifestyle. Join us for expert guidance and transformative experiences to enhance your overall well-being."
+"image": "https://i.ibb.co/VNg7mtk/welness.png",
+"price": "149$",
+    "title": "Wellness Workshops: Nurturing Your Mind, Body, and Soul",
+    "description": "Join us for an enriching experience that focuses on holistic well-being. Our Wellness Workshops offer a unique opportunity to explore and nurture your mind, body, and soul. Whether you're seeking relaxation techniques, fitness insights, or mental clarity, these workshops have something for everyone.",
+    "eventHighlights": [
+      "Mindfulness Meditation: Learn to find inner peace and reduce stress through guided meditation sessions.",
+      "Nutrition and Healthy Eating: Discover the secrets to a balanced diet and sustainable eating habits.",
+      "Yoga and Fitness: Engage in invigorating yoga and fitness sessions led by certified instructors.",
+      "Stress Management: Acquire effective strategies to manage stress and boost your mental resilience.",
+      "Holistic Healing: Explore alternative therapies like acupuncture, reiki, and aromatherapy."
+    ],
+    "schedule": {
+      "time": "04:00 pm , 26 Sep",
+      "location": "Dhanmondi, Dhaka."
+    },
+    "registration": "Secure your spot today! Limited seats available. Register now to embark on a journey towards wellness.",
+    "targetAudience": [
+      "Individuals seeking physical and mental rejuvenation",
+      "Health enthusiasts eager to learn new techniques",
+      "Anyone looking to enhance their overall well-being"
+    ],
+    "whyAttend": "Wellness Workshops are designed to empower you with the knowledge and tools needed to lead a healthier and happier life. Join us to discover a path to holistic wellness and unlock your full potential.",
+    "contactInformation": "For inquiries and registration, please contact us at Insert Contact Information."
   },
   {
     "id": 2,
-    "price": "99$",
-    "serviceName": "Health Screenings",
-    "image": "https://i.ibb.co/jW9h901/health-screening.png",
-    "description": "Health Screenings provide early detection of potential health issues. Our comprehensive screenings cover various aspects, including blood pressure, cholesterol levels, and more. Regular screenings empower you to take proactive steps towards maintaining good health and preventing future complications."
+"image": "https://i.ibb.co/jW9h901/health-screening.png",
+"price": "159$",
+    "title": "Health Screenings: Comprehensive Check-ups for Your Well-being",
+    "description": "Our Health Screenings event offers comprehensive health check-ups and screenings to ensure your well-being. We provide a range of tests and examinations to detect potential health issues early and guide you toward a healthier lifestyle.",
+    "eventHighlights": [
+      "Full Body Check-up: Get a detailed assessment of your overall health, including blood tests and vital sign measurements.",
+      "Specialized Screenings: We offer screenings for specific conditions such as diabetes, cardiovascular health, and more.",
+      "Consultation with Experts: Discuss your results and receive guidance from experienced healthcare professionals.",
+      "Health Education: Gain valuable insights into maintaining a healthy lifestyle and preventing diseases."
+    ],
+    "schedule": {
+      "time": "04:30 pm , 05 Oct",
+      "location": "Dhanmondi, Dhaka."
+    },
+    "registration": "Book your health screening appointment today and take a proactive step toward a healthier future.",
+    "targetAudience": [
+      "Individuals of all ages interested in preventive healthcare",
+      "People with specific health concerns or risk factors",
+      "Families looking to prioritize their well-being"
+    ],
+    "whyAttend": "Regular health screenings are essential for early disease detection and prevention. Attend this event to ensure your health is on the right track.",
+    "contactInformation": "For appointments and inquiries, please contact us at Insert Contact Information."
   },
   {
     "id": 3,
-    "price": "149$",
-    "serviceName": "Holistic Healing",
-    "image": "https://i.ibb.co/VTnDJkS/holistic.png",
-    "description": "Holistic Healing emphasizes treating the whole person—mind, body, and spirit. Our Holistic Healing services offer natural therapies and techniques to promote overall well-being. Experience personalized care that addresses physical, emotional, and spiritual aspects, fostering balance and harmony in your life."
+"image": "https://i.ibb.co/VTnDJkS/holistic.png",
+"price": "145$",
+    "title": "Holistic Healing: Embrace Balance and Harmony",
+    "description": "Discover the world of holistic healing and experience a profound sense of balance and harmony in your life. Our Holistic Healing event offers various therapies, including acupuncture, aromatherapy, and energy healing.",
+    "eventHighlights": [
+      "Acupuncture Sessions: Stimulate energy flow and promote natural healing through acupuncture.",
+      "Aromatherapy Workshops: Learn the therapeutic benefits of essential oils and create your blends.",
+      "Energy Healing Sessions: Experience the power of energy healing to restore balance in your body and mind.",
+      "Holistic Nutrition: Explore the connection between food and well-being through holistic nutrition talks."
+    ],
+    "schedule": {
+      "time": "03:40 pm , 08 Oct",
+      "location": "Dhanmondi, Dhaka."
+    },
+    "registration": "Join us for a transformative journey toward holistic wellness. Reserve your spot and embrace a healthier and harmonious lifestyle.",
+    "targetAudience": [
+      "Individuals seeking holistic healing and natural therapies",
+      "Those interested in exploring alternative approaches to health",
+      "People looking to enhance their spiritual and emotional well-being"
+    ],
+    "whyAttend": "Holistic healing offers a holistic approach to health, addressing physical, emotional, and spiritual aspects. Attend this event to experience true balance and well-being.",
+    "contactInformation": "For event details and inquiries, please contact us at Insert Contact Information."
   },
   {
     "id": 4,
-    "price": "185$",
-    "serviceName": "Career in Health",
     "image": "https://i.ibb.co/GQDyK9H/pharma.jpg",
-    "description": "Embark on a fulfilling journey with a Career in Health. Explore diverse opportunities in healthcare, from nursing to medical research. Shape the future of medicine and make a positive impact on people's lives while enjoying a rewarding and ever-evolving profession."
+"price": "159$",
+    "title": "Career in Health: Your Path to a Fulfilling Healthcare Career",
+    "description": "Embark on a rewarding journey in the healthcare industry with our 'Career in Health' event. Explore various healthcare career paths, educational opportunities, and industry insights to start or advance your career.",
+    "eventHighlights": [
+      "Career Guidance: Receive expert guidance on choosing the right healthcare career path based on your interests and goals.",
+      "Educational Opportunities: Learn about accredited healthcare programs and training institutes.",
+      "Networking Opportunities: Connect with professionals and institutions to kickstart your healthcare career.",
+      "Industry Trends: Stay updated on the latest trends and developments in the healthcare sector."
+    ],
+    "schedule": {
+      "time": "04:40 pm , 10 Oct",
+      "location": "Dhanmondi, Dhaka."
+    },
+    "registration": "Explore the world of healthcare careers and take the first step toward a fulfilling and impactful profession.",
+    "targetAudience": [
+      "Students aspiring to enter the healthcare field",
+      "Professionals looking to switch to a healthcare career",
+      "Individuals interested in healthcare education and training"
+    ],
+    "whyAttend": "A career in healthcare offers opportunities for making a positive impact on people's lives. Attend this event to explore your potential in the healthcare industry.",
+    "contactInformation": "For career guidance and event details, please contact us at Insert Contact Information."
   },
   {
     "id": 5,
-    "price": "190$",
-    "serviceName": "Nutrition Guidance",
-    "image": "https://i.ibb.co/V99XVMQ/gynae.png",
-    "description": "Receive expert Nutrition Guidance to optimize your well-being. Our professionals create personalized dietary plans, helping you make healthier choices. Achieve your health goals, whether it's weight management, improved energy levels, or dietary adjustments for specific conditions. Start your journey towards a healthier lifestyle with our guidance."
+"image": "https://i.ibb.co/V99XVMQ/gynae.png",
+"price": "150$",
+    "title": "Nutrition Guidance: Fueling Your Body for Health and Vitality",
+    "description": "Unlock the secrets of proper nutrition and its impact on your health. Our Nutrition Guidance event offers expert advice on creating a balanced diet to support your overall well-being.",
+    "eventHighlights": [
+      "Nutritional Assessments: Receive personalized nutritional assessments to understand your dietary needs.",
+      "Healthy Eating Workshops: Learn practical tips and recipes for maintaining a balanced diet.",
+      "Nutrition Plans: Get customized nutrition plans designed to meet your health and fitness goals.",
+      "Q&A Sessions: Interact with nutrition experts and get answers to your dietary questions."
+    ],
+    "schedule": {
+      "time": "05:30 pm , 08 Aug",
+      "location": "Dhanmondi, Dhaka."
+    },
+    "registration": "Join us for a journey into the world of nutrition and set yourself on a path to optimal health and vitality.",
+    "targetAudience": [
+      "Individuals looking to improve their eating habits",
+      "Fitness enthusiasts seeking dietary guidance",
+      "People interested in preventive nutrition"
+    ],
+    "whyAttend": "Proper nutrition is the foundation of good health. Attend this event to gain the knowledge and tools to make informed dietary choices.",
+    "contactInformation": "For nutritional guidance and event inquiries, please contact us at Insert Contact Information."
   },
   {
     "id": 6,
-    "price": "210$",
-    "serviceName": "Mental Health Support",
-    "image": "https://i.ibb.co/JpMZ7Q5/mental.png",
-    "description": "Access dedicated Mental Health Support for a healthier mind. Our compassionate professionals offer therapy and counseling services to address various mental health concerns. Receive guidance, coping strategies, and a safe space to discuss your feelings. Prioritize your emotional well-being and embark on a path to mental wellness with us."
+"image": "https://i.ibb.co/JpMZ7Q5/mental.png",
+"price": "179$",
+    "title": "Mental Health Support: Nurturing Your Emotional Well-being",
+    "description": "Prioritize your mental health with our 'Mental Health Support' event. Explore effective strategies for emotional well-being and stress management to lead a happier and more fulfilling life.",
+    "eventHighlights": [
+      "Stress Management Techniques: Learn practical techniques to manage and reduce stress in your daily life.",
+      "Emotional Resilience Workshops: Build emotional resilience and enhance your ability to cope with life's challenges.",
+      "Mental Health Seminars: Gain insights into common mental health issues and how to address them.",
+      "Supportive Community: Connect with others who share similar experiences and concerns."
+    ],
+    "schedule": {
+      "time": "03:50 pm , 11 Sep",
+      "location": "Dhanmondi, Dhaka."
+    },
+    "registration": "Join us for a journey toward improved mental well-being. Register now and take the first step toward a healthier mindset.",
+    "targetAudience": [
+      "Individuals experiencing stress or seeking emotional support",
+      "People interested in mental health awareness",
+      "Anyone looking to enhance their emotional resilience"
+    ],
+    "whyAttend": "Mental health is essential for overall well-being. Attend this event to gain valuable insights and tools for nurturing your emotional health.",
+    "contactInformation": "For mental health support and event details, please contact us at Insert Contact Information."
   }
 ]

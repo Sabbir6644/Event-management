@@ -2,6 +2,7 @@ import { createContext, useEffect, useState } from "react";
 import { GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
 import auth from './../../public/firebase.config';
 import bgImage from "/src/images/background.jpg"
+import bg from "/src/images/bg.jpg"
 import logo from "/src/images/logo.png"
 import imgUNFPA from "/src/images/unfpa.png"
 import imgUnicef from "/src/images/unicef.png"
@@ -62,7 +63,7 @@ const AuthContext = ({ children }) => {
            loading, bgImage, logo,
             upComingEvents, serviceData,
              doctorsData, createUser, loginWithGoogle,
-          imgFRIENDSHIP, imgUNFPA, imgUnicef, imgWHO }
+          imgFRIENDSHIP, imgUNFPA, imgUnicef, imgWHO, bg }
      return (
           <UserContext.Provider value={userData}>
 

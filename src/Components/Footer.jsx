@@ -5,9 +5,9 @@ import { UserContext } from "./AuthContext";
 const Footer = () => {
      const {logo}= useContext(UserContext)
      return (
-          <footer className="footer footer-center p-10 bg-black text-white">
+          <footer className="footer footer-center p-10 bg-blue-500 text-white">
   <aside>
-   <img src={logo} alt="" />
+   <img className="w-20 h-16" src={logo} alt="" />
     <p className="font-bold">
       Health Care Ltd. <br/>Providing reliable tech since 1992
     </p> 

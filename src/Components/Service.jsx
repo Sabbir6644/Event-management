@@ -3,8 +3,10 @@ import { UserContext } from "./AuthContext";
 import ServiceCard from "./ServiceCard";
 
 
+
 const Service = () => {
      const { serviceData } = useContext(UserContext)
+   
      return (
           <div className="my-5">
                <h2 className="text-5xl font-bold text-center mb-5">Our Services</h2>
