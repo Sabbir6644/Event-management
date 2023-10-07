@@ -3,6 +3,10 @@ import { GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged,
 import auth from './../../public/firebase.config';
 import bgImage from "/src/images/background.jpg"
 import logo from "/src/images/logo.png"
+import imgUNFPA from "/src/images/unfpa.png"
+import imgUnicef from "/src/images/unicef.png"
+import imgWHO from "/src/images/who.png"
+import imgFRIENDSHIP from "/src/images/friendship.png"
 
 export const UserContext = createContext(null);
 const AuthContext = ({ children }) => {
@@ -57,7 +61,8 @@ const AuthContext = ({ children }) => {
      const userData = {user, logout, userLogin,
            loading, bgImage, logo,
             upComingEvents, serviceData,
-             doctorsData, createUser, loginWithGoogle }
+             doctorsData, createUser, loginWithGoogle,
+          imgFRIENDSHIP, imgUNFPA, imgUnicef, imgWHO }
      return (
           <UserContext.Provider value={userData}>
 

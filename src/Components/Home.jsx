@@ -9,15 +9,13 @@ import Partner from "./Partner";
 const Home = () => {
      const { bgImage } = useContext(UserContext)
      const backgroundStyle = {
-          backgroundImage: `url(${bgImage})`,
-          minHeight: "80vh",
-          Width: "100vw",
+          backgroundImage: `url(${bgImage})`,        
           backgroundPosition: "cover",
         };
         
      return (
           <div className="max-w-7xl mx-auto">
-               <div className="flex items-center pl-10" style={backgroundStyle}>
+               <div className="flex items-center pl-10 md:min-h-screen" style={backgroundStyle}>
                <div>
                <h2 className="text-orange-300 text-5xl font-bold text-center mb-3">Your Health, Your Future <br />
                 Ignite Wellness, <br />
