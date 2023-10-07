@@ -1,5 +1,5 @@
 import { createContext, useEffect, useState } from "react";
-import { onAuthStateChanged } from "firebase/auth";
+import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signOut } from "firebase/auth";
 import auth from './../../public/firebase.config';
 import bgImage from "/src/images/background.jpg"
 import logo from "/src/images/logo.png"
@@ -25,6 +25,19 @@ const AuthContext = ({ children }) => {
           .then(res=> res.json())
           .then(data => setDoctorsData(data))
      },[])
+     const createUser = (email,password)=>{
+
+          return createUserWithEmailAndPassword(auth,email,password)
+      }
+      const userLogin = (email,password)=>{
+      
+           return signInWithEmailAndPassword(auth,email,password)
+       }
+       const logout = ()=>{
+         
+           return signOut(auth)
+       }
+
      useEffect(() => {
           const unSubscribe = onAuthStateChanged(auth, (currentUser) => {
                console.log(currentUser);
@@ -35,7 +48,10 @@ const AuthContext = ({ children }) => {
                unSubscribe()
           }
      }, [])
-     const userData = { loading, bgImage, logo, upComingEvents, serviceData, doctorsData }
+     const userData = {logout, userLogin,
+           loading, bgImage, logo,
+            upComingEvents, serviceData,
+             doctorsData, createUser }
      return (
           <UserContext.Provider value={userData}>
 

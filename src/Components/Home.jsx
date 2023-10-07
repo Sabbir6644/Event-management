@@ -3,6 +3,9 @@ import Nav from "./Nav";
 import { UserContext } from "./AuthContext";
 import Service from "./service";
 import UpcomingEvents from "./UpcomingEvents";
+import Partner from "./Partner";
+import Footer from "./footer";
+
 
 
 const Home = () => {
@@ -28,8 +31,10 @@ const Home = () => {
                </div>
 
 <Service></Service>
-
+<Partner></Partner>
 <UpcomingEvents></UpcomingEvents>
+<Footer></Footer>
+
           </div>
      );
 };
