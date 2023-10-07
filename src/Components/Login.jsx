@@ -7,7 +7,7 @@ import Swal from 'sweetalert2'
 
 const Login = () => {
      const navigate = useNavigate();
-     const { userLogin } = useContext(UserContext);
+     const { userLogin, loginWithGoogle } = useContext(UserContext);
      const [alram, setAlram] = useState(null);
      const [show, setShow] = useState(false);
      const handleShow = () => {
@@ -22,6 +22,23 @@ const Login = () => {
 
      const emailRef = useRef(null);
      const passwordRef = useRef(null);
+     const handleGoogle= ()=>{
+          loginWithGoogle()
+          .then(()=>{
+               Swal.fire({
+                    position: 'center',
+                    icon: 'success',
+                    title: 'Login Successful!',
+                    showConfirmButton: false,
+                    timer: 1500
+                  })
+                  navigate('/')
+          })
+          .catch((err) => {
+               setAlram(err.message);
+               
+          })
+     }
      const handleSubmit = e => {
           e.preventDefault();
           const email = e.target.email.value;
@@ -84,7 +101,7 @@ const Login = () => {
                     }
 
                     <div className="mt-3">
-                         <button className="w-full py-2 border rounded-md text-lg font-medium">Login with Google</button>
+                         <button onClick={handleGoogle} className="w-full py-2 border rounded-md text-lg font-medium">Login with Google</button>
                     </div>
                </div>
 
