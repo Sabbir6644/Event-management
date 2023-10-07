@@ -14,6 +14,8 @@ import PrivateRoute from './Components/PrivateRoute';
 import ErrorPage from './Components/ErrorPage';
 import Nav from './Components/Nav';
 import Footer from './Components/footer';
+import About from './Components/About';
+import Contact from './Components/Contact';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -36,11 +38,15 @@ const router = createBrowserRouter([
         path: "/details/:id",
         element: <PrivateRoute><ServiceDetails></ServiceDetails></PrivateRoute>,
       },
+      {
+        path: "/about",
+        element: <PrivateRoute><About></About></PrivateRoute>,
+      },
+      {
+        path: "/contact",
+        element: <PrivateRoute><Contact></Contact></PrivateRoute>,
+      },
     ]
-  },
-  {
-    path: "/",
-element:    <Footer></Footer>
   }
 ]);
 

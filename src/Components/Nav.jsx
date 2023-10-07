@@ -9,8 +9,8 @@ const Nav = () => {
      const links = 
      <div className=" flex flex-col lg:flex-row gap-4 text-base font-semibold">
                <NavLink to={'/'}>Home</NavLink>
-                <NavLink to={'/login'}>Sign In</NavLink>
-                <NavLink to={'/registration'}>Sign Up</NavLink>
+                <NavLink to={'/about'}>About</NavLink>
+                <NavLink to={'/contact'}>Contact Us</NavLink>
                 </div>
      const handleLogOut =()=>{
       logout()
@@ -49,7 +49,7 @@ const Nav = () => {
           </div>
         </div>
     <Outlet></Outlet>
- 
+ <Footer></Footer>
      </div>
           );
 };
