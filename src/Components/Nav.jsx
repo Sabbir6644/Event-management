@@ -1,18 +1,23 @@
 import { useContext } from "react";
 import { UserContext } from "./AuthContext";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, Outlet } from "react-router-dom";
+import Footer from "./footer";
 
 const Nav = () => {
-     const { logo }= useContext(UserContext)
+     const { logo, user, logout }= useContext(UserContext)
+
      const links = 
      <div className=" flex flex-col lg:flex-row gap-4 text-base font-semibold">
                <NavLink to={'/'}>Home</NavLink>
                 <NavLink to={'/login'}>Sign In</NavLink>
                 <NavLink to={'/registration'}>Sign Up</NavLink>
                 </div>
-     
+     const handleLogOut =()=>{
+      logout()
+     }
      return (     
-          <div className="navbar bg-base-100">
+     <div className="shadow-lg">
+                <div className="navbar bg-base-100 max-w-7xl mx-auto">
           <div className="navbar-start">
             <div className="dropdown">
               <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -30,11 +35,22 @@ const Nav = () => {
             </ul>
           </div>
           <div className="navbar-end">
-               <Link to={'/login'}><button className="btn">Login</button></Link>
+            
+            {
+              user? <div className="flex gap-2 items-center">
+                <h4 className="text-lg font-semibold">{user?.displayName}</h4>
+              <img className="rounded-full h-14 w-14" src={user?.photoURL} alt="" />
+              <button onClick={handleLogOut} className="btn">Logout</button>
+              </div>  :
+              <Link to={'/login'}><button className="btn">Login</button></Link>
+            }
+               
             
           </div>
         </div>
-     
+    <Outlet></Outlet>
+ 
+     </div>
           );
 };
 

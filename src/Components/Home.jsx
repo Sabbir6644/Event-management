@@ -1,10 +1,8 @@
 import { useContext } from "react";
-import Nav from "./Nav";
 import { UserContext } from "./AuthContext";
 import Service from "./service";
 import UpcomingEvents from "./UpcomingEvents";
 import Partner from "./Partner";
-import Footer from "./footer";
 
 
 
@@ -18,8 +16,7 @@ const Home = () => {
         };
         
      return (
-          <div>
-               <Nav></Nav>
+          <div className="max-w-7xl mx-auto">
                <div className="flex items-center pl-10" style={backgroundStyle}>
                <div>
                <h2 className="text-orange-300 text-5xl font-bold text-center mb-3">Your Health, Your Future <br />
@@ -29,11 +26,10 @@ const Home = () => {
                  and shape a brighter future for yourself. Your health is your future.</p>
                </div>
                </div>
-
 <Service></Service>
 <Partner></Partner>
 <UpcomingEvents></UpcomingEvents>
-<Footer></Footer>
+
 
           </div>
      );

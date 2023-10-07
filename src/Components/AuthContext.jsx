@@ -10,6 +10,7 @@ const AuthContext = ({ children }) => {
      const [upComingEvents, setUpComingEvents]= useState();
      const [serviceData, setServiceData]= useState();
      const [doctorsData, setDoctorsData]= useState();
+     const [ user, setUser]= useState(null);
      useEffect(()=>{
           fetch('/upComingEvents.json')
           .then(res=> res.json())
@@ -26,25 +27,27 @@ const AuthContext = ({ children }) => {
           .then(data => setDoctorsData(data))
      },[])
      const createUser = (email,password)=>{
-
+          setLoading(true)
           return createUserWithEmailAndPassword(auth,email,password)
       }
       const userLogin = (email,password)=>{
-      
+          setLoading(true)
            return signInWithEmailAndPassword(auth,email,password)
        }
        const googleProvider = new GoogleAuthProvider()
        const loginWithGoogle = ()=>{
+          setLoading(true)
           return signInWithPopup(auth, googleProvider)
        }
        const logout = ()=>{
-         
+          setLoading(true)
            return signOut(auth)
+          
        }
 
      useEffect(() => {
           const unSubscribe = onAuthStateChanged(auth, (currentUser) => {
-               console.log(currentUser);
+               setUser(currentUser);
                setLoading(false)
                // console.log('from unSubscribe useEffect' , currentUser);
           });
@@ -52,7 +55,7 @@ const AuthContext = ({ children }) => {
                unSubscribe()
           }
      }, [])
-     const userData = {logout, userLogin,
+     const userData = {user, logout, userLogin,
            loading, bgImage, logo,
             upComingEvents, serviceData,
              doctorsData, createUser, loginWithGoogle }

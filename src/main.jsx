@@ -9,19 +9,39 @@ import AuthContext from './Components/AuthContext';
 import Home from './Components/Home';
 import Login from './Components/Login';
 import Registration from './Components/Registration';
+import ServiceDetails from './Components/ServiceDetails';
+import PrivateRoute from './Components/PrivateRoute';
+import ErrorPage from './Components/ErrorPage';
+import Nav from './Components/Nav';
+import Footer from './Components/footer';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home></Home>,
+    element: <Nav></Nav>,
+    errorElement: <ErrorPage></ErrorPage>,
+    children:[
+      {
+        path: "/",
+        element: <Home></Home>,
+      },
+      {
+        path: "/login",
+        element: <Login></Login>,
+      },
+      {
+        path: "/registration",
+        element: <Registration></Registration>,
+      },
+      {
+        path: "/details/:id",
+        element: <PrivateRoute><ServiceDetails></ServiceDetails></PrivateRoute>,
+      },
+    ]
   },
   {
-    path: "/login",
-    element: <Login></Login>,
-  },
-  {
-    path: "/registration",
-    element: <Registration></Registration>,
-  },
+    path: "/",
+element:    <Footer></Footer>
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
