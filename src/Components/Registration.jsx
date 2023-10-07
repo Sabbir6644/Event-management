@@ -9,7 +9,6 @@ import Swal from 'sweetalert2'
 
 const Registration = () => {
      const { createUser } = useContext(UserContext);
-     // console.log(createUser);
      const [alram, setAlram] = useState(null);
      const [show, setShow] = useState(false);
      const handleShow = () => {
@@ -19,24 +18,24 @@ const Registration = () => {
      const imageRef = useRef(null);
      const emailRef = useRef(null);
      const passwordRef = useRef(null);
-
      const isStrongPassword = (password) => {
-          // Regex pattern for at least one capital letter and one number
           const regex = /^(?=.*[A-Z])(?=.*[!@#$%^&*()_+])[A-Za-z\d!@#$%^&*()_+]{6,}$/;
           return regex.test(password);
      };
-
      const handleSubmit = e => {
           e.preventDefault();
           const name = e.target.name.value;
           const imageUrl = e.target.imageUrl.value;
           const email = e.target.email.value;
           const password = e.target.password.value;
-          // console.log(accept, name, email, password);
           if (!isStrongPassword(password)) {
-               return alert('Password must contain at least one capital letter and one number.');
+               return Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Password must contain at least one capital letter one number and a special character.',
+                  })
           } else {
-               // createUserWithEmailAndPassword(auth, email, password)
+              
                createUser(email,password)
                     .then((result) => {
                          setAlram('');
@@ -54,12 +53,14 @@ const Registration = () => {
                                    timer: 1500
                                  })
                          )
-                              .catch(error => console.error(error))
+                         .catch((err) => {
+                              setAlram(err.message)
+                         })
 
                               
                          })
-                    .catch(() => {
-                         setAlram('Already you have an account please try to login')
+                    .catch((err) => {
+                         setAlram(err.message)
                     })
                nameRef.current.value = '';
                imageRef.current.value = '';

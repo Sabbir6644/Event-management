@@ -1,8 +1,16 @@
-# React + Vite
+## Project Features
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- **Promotion of Health and Wellness:**
+  - The website prominently promotes the theme of "Your Health, Your Future" and encourages users to ignite wellness and transform their lives. It provides a message of well-being and self-improvement.
 
-Currently, two official plugins are available:
+- **Authentication Handling:**
+  - The website features authentication functionality, as indicated by the usage of the UserContext. It can identify whether a user is logged in or not. If a user is not logged in, they are redirected to the login page, ensuring that certain routes are protected and accessible only to authenticated users
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Private Route Protection:**
+  - The PrivateRoute component is designed to protect specific routes from unauthorized access. When a user tries to access a protected route, they will be redirected to the login page  if they are not authenticated. This feature enhances the security and privacy of certain sections of the website.
+
+- **Login with Google:**
+  - In addition to traditional email and password login, this website offers users the option to log in with their Google accounts. Clicking the "Login with Google" button triggers the loginWithGoogle function, which authenticates users using their Google credentials. Upon successful login, users are redirected to the destination specified in the location.state object, and a success message is displayed.
+
+- **Responsive Design:**
+  - The website is designed to be responsive, It adapts to various screen sizes and orientations, ensuring that the service information is displayed in an organized and visually appealing manner on different devices. This responsiveness improves the user experience, making the website accessible from both desktop, tablet and mobile devices.

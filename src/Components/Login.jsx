@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AiOutlineEye, AiOutlineEyeInvisible } from 'react-icons/ai';
 import { useContext, useRef, useState } from "react";
 import { UserContext } from "./AuthContext";
@@ -7,6 +7,7 @@ import Swal from 'sweetalert2'
 
 const Login = () => {
      const navigate = useNavigate();
+     const location = useLocation();
      const { userLogin, loginWithGoogle } = useContext(UserContext);
      const [alram, setAlram] = useState(null);
      const [show, setShow] = useState(false);
@@ -32,7 +33,7 @@ const Login = () => {
                     showConfirmButton: false,
                     timer: 1500
                   })
-                  navigate('/')
+               navigate(location?.state? location.state : '/');
           })
           .catch((err) => {
                setAlram(err.message);
@@ -45,7 +46,12 @@ const Login = () => {
           const password = e.target.password.value;
 
           if (!isStrongPassword(password)) {
-               return alert('Password must contain at least one capital letter one number and a special character.');
+               return Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Password must contain at least one capital letter one number and a special character.',
+                  })
+
           } else {
                userLogin(email, password)
                     .then(() => {
@@ -57,7 +63,7 @@ const Login = () => {
                               timer: 1500
                             })
                          
-                         navigate('/')
+                         navigate(location?.state? location.state : '/');
 
 
                          emailRef.current.value = '';

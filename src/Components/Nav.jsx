@@ -8,9 +8,34 @@ const Nav = () => {
 
      const links = 
      <div className=" flex flex-col lg:flex-row gap-4 text-base font-semibold">
-               <NavLink to={'/'}>Home</NavLink>
-                <NavLink to={'/about'}>About</NavLink>
-                <NavLink to={'/contact'}>Contact Us</NavLink>
+               <NavLink to="/" style={({ isActive}) => {
+    return {
+      fontWeight: isActive ? "bold" : "",
+      textDecoration: isActive? "underline" : "none"
+    };
+  }}
+>
+  Home
+</NavLink>
+               <NavLink to="/about" style={({ isActive}) => {
+    return {
+      fontWeight: isActive ? "bold" : "",
+      textDecoration: isActive? "underline" : "none"
+    };
+  }}
+>
+About
+</NavLink>
+               <NavLink to="/contact" style={({ isActive}) => {
+    return {
+      fontWeight: isActive ? "bold" : "",
+      textDecoration: isActive? "underline" : "none"
+    };
+  }}
+>
+Contact Us
+</NavLink>
+               
                 </div>
      const handleLogOut =()=>{
       logout()
