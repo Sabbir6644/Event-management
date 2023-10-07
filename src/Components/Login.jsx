@@ -2,6 +2,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { AiOutlineEye, AiOutlineEyeInvisible } from 'react-icons/ai';
 import { useContext, useRef, useState } from "react";
 import { UserContext } from "./AuthContext";
+import Swal from 'sweetalert2'
 
 
 const Login = () => {
@@ -30,9 +31,15 @@ const Login = () => {
                return alert('Password must contain at least one capital letter one number and a special character.');
           } else {
                userLogin(email, password)
-                    .then((result) => {
-
-                         alert('Login successful');
+                    .then(() => {
+                         Swal.fire({
+                              position: 'center',
+                              icon: 'success',
+                              title: 'Login Successful!',
+                              showConfirmButton: false,
+                              timer: 1500
+                            })
+                         
                          navigate('/')
 
 
@@ -40,8 +47,9 @@ const Login = () => {
                          passwordRef.current.value = '';
                          setAlram('')
                     })
-                    .catch(() => {
-                         setAlram('Invalid user email or password');
+                    .catch((err) => {
+                         setAlram(err.message);
+                         
                     })
           }
 

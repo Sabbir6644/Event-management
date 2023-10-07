@@ -1,8 +1,9 @@
 import { useContext, useRef, useState } from "react";
 import { AiOutlineEye, AiOutlineEyeInvisible } from 'react-icons/ai';
 import { Link } from "react-router-dom";
-import { sendEmailVerification, updateProfile } from "firebase/auth";
+import { updateProfile } from "firebase/auth";
 import { UserContext } from "./AuthContext";
+import Swal from 'sweetalert2'
 
 
 
@@ -15,6 +16,7 @@ const Registration = () => {
           setShow(!show)
      }
      const nameRef = useRef(null);
+     const imageRef = useRef(null);
      const emailRef = useRef(null);
      const passwordRef = useRef(null);
 
@@ -27,6 +29,7 @@ const Registration = () => {
      const handleSubmit = e => {
           e.preventDefault();
           const name = e.target.name.value;
+          const imageUrl = e.target.imageUrl.value;
           const email = e.target.email.value;
           const password = e.target.password.value;
           // console.log(accept, name, email, password);
@@ -39,15 +42,27 @@ const Registration = () => {
                          setAlram('');
                          updateProfile(result.user, {
                               displayName: name,
-                              photoURL: "https://example.com/jane-q-user/profile.jpg"
-                         }).then(alert('Sign up successful, Please check your email for verification'))
+                              photoURL: imageUrl,
+                         }
+                         
+                         ).then(
+                              Swal.fire({
+                                   position: 'center',
+                                   icon: 'success',
+                                   title: 'Registration Successful!',
+                                   showConfirmButton: false,
+                                   timer: 1500
+                                 })
+                         )
                               .catch(error => console.error(error))
 
-                    })
+                              
+                         })
                     .catch(() => {
                          setAlram('Already you have an account please try to login')
                     })
                nameRef.current.value = '';
+               imageRef.current.value = '';
                emailRef.current.value = '';
                passwordRef.current.value = '';
           }
@@ -56,11 +71,12 @@ const Registration = () => {
 
      }
      return (
-          <div className="mx-auto">
+          <div className="flex min-h-screen items-center mx-auto">
                <div className=" w-11/12 md:w-[500px] mx-auto">
                     <div>
                          <form onSubmit={handleSubmit}>
                               <input ref={nameRef} className="border p-2 w-full mb-4" type="text" name="name" placeholder="Name..." required />
+                              <input ref={imageRef} className="border p-2 w-full mb-4" type="text" name="imageUrl" placeholder="Your Image url..." required />
                               <input ref={emailRef} className="border p-2 w-full" type="email" name="email" placeholder="Email..." required />
 
                               <div className="relative">
